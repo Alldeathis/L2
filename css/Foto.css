@@ -1,0 +1,45 @@
+.images{	
+	float:left;
+	margin-left:10px;
+	margin-right:-20px;
+	margin-top:-10px;
+	-webkit-transform:scale(0.6);/*Начальный размер изображения при загрузке страницы*/
+	-webkit-transition-duration: 0.5s;/*Время перехода от маленького размера к большому*/
+}
+.images:hover{
+	-webkit-transform:scale(1.2);/*Когда курсор мыши проходит над изображением, оно увеличивается в размере*/
+	-webkit-box-shadow:0px 0px 40px #ccc;
+}	 
+.images .layer{
+	width: 100%;
+	height: 100%;
+	background-color:#000;
+	position: absolute;	 
+	opacity:0.5;
+	-webkit-transition-duration: 0.8s;
+}
+#image1:hover .layer{
+	width:0%;	
+}
+#image2:hover .layer{
+	width:0%;	
+}
+#image3:hover .layer{
+	width:0%;	
+}
+#image4:hover .layer{
+	width:0%;	
+}
+#image5:hover .layer{
+    height:0%;
+}
+#image6:hover .layer {
+	height:0%;	
+	margin-top:150px;
+}
+#image7:hover .layer{
+	margin-left:150px;
+	margin-top:150px;
+	height:0%;
+	width:0%;
+}
